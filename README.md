@@ -2,11 +2,11 @@
 
 ## Desktop
 
-![Home page layout](./src/assets/img/layout-home.png)
+![Home page layout](layout-home.png)
 
 ## Mobile
 
-![Home page layout](./src/assets/img/layout-home-mobile.png)
+![Home page layout](layout-home-mobile.png)
 
 ## Stack Used
 
