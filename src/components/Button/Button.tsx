@@ -1,6 +1,5 @@
 import { MouseEventHandler, ReactNode, RefAttributes } from "react";
 import { IconType } from "react-icons";
-import { Link } from "react-router-dom";
 import { ButtonStyle } from "./ButtonStyle";
 
 interface ButtonProps {
@@ -11,6 +10,7 @@ interface ButtonProps {
   onClick?: MouseEventHandler<HTMLButtonElement>;
   link?: string;
   isExternal?: boolean; 
+  downloadUrl?: string;
 }
 
 export function Button({
@@ -21,12 +21,23 @@ export function Button({
   onClick,
   link,
   isExternal,
+  downloadUrl
 }: ButtonProps) {
   const Icon = icon || null;
   const handleClick: MouseEventHandler<HTMLButtonElement> = (event) => {
     if (link && isExternal) {
       window.open(link, "_blank", "noopener noreferrer");
     }
+
+    if (downloadUrl) {
+      const link = document.createElement('a');
+      link.href = downloadUrl;
+      link.setAttribute('download', 'Jenyffer Bastos Sacramento_CV.docx');
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+    }
+    
     if (onClick) {
       onClick(event); 
   };

@@ -11,8 +11,8 @@ export function Home() {
       <h1>Engenheira de Software</h1>
       <Text>Fico feliz em vê-lo (a) por aqui.</Text>
       <ButtonContainer>
-        <Button text="Currículo" color={"#EA6AA9"} icon={FaRegFilePdf} children={undefined} />
-        <Button text="GitHub" color={"transparent"} icon={VscGithubAlt} children={undefined}/>
+        <Button text="Currículo" color={"#EA6AA9"} icon={FaRegFilePdf} children={undefined} downloadUrl="src\assets\documento\Jenyffer Bastos Sacramento_CV.docx"/>
+        <Button text="GitHub" color={"transparent"} icon={VscGithubAlt} children={undefined}  ></Button>
       </ButtonContainer>
     </HomeStyle>
   );
