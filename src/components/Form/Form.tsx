@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { TbSend } from "react-icons/tb";
+import Swal from "sweetalert2";
 import { Button } from "../Button/Button";
 import {
   FormContainer,
@@ -45,9 +46,29 @@ export function Form() {
 
       if (response.status === 200) {
         console.log("E-mail enviado com sucesso!");
+        Swal.fire({
+          icon: 'success',
+          title: 'E-mail enviado com sucesso!',
+          text: 'Sua mensagem foi enviada.',
+        });
+
+        setFormData({
+          name: "",
+          email: "",
+          phone: "",
+          subject: "",
+          message: "",
+        });
+
       } else {
         console.error("Erro ao enviar o e-mail:", response.statusText);
+        Swal.fire({
+          icon: 'error',
+          title: 'Erro ao enviar e-mail',
+          text: 'Houve um erro ao enviar sua mensagem.',
+        });
       }
+      
     } catch (error) {
       console.error("Erro ao enviar o e-mail:", error);
     }

@@ -23,6 +23,7 @@
     "react-scroll": "^1.8.9",
     "react-switch": "^7.0.0",
     "styled-components": "^5.3.10",
+    "sweetalert2": "^11.7.28",
     "swiper": "^9.4.1"
   },
   "devDependencies": {
