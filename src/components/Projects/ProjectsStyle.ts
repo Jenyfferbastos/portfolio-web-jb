@@ -15,7 +15,7 @@ export const ProjectsStyle = styled.div`
     margin-top: 45%;
   }
   @media only screen and (max-width: 768px) {
-    margin-top: 27rem;
+    margin-top: 30rem;
   }
 `;
 

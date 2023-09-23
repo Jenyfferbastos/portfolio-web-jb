@@ -10,7 +10,7 @@ export const TechnicalSkillsStyle = styled.div`
   text-align: center;
 
   @media only screen and (max-width: 768px) {
-    margin-top: 5rem;
+    margin-top: 10rem;
   }
 `;
 

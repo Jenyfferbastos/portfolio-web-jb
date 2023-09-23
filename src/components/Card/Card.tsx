@@ -36,7 +36,7 @@ function CardInstance(props: PropsCardData) {
         </IconList>
         <Description>{description}</Description>
         <Buttons>
-          <Button color="#EA6AA9" text="Ver online" children={undefined} link={onlineLink} isExternal={true}/>
+          {/* <Button color="#EA6AA9" text="Ver online" children={undefined} link={onlineLink} isExternal={true}/> */}
           <Button color="transparent" text="Ver código" children={undefined} link={codeLink} isExternal={true}/>
         </Buttons>
       </BoxContainer>

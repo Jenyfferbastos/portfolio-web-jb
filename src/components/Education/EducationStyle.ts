@@ -14,7 +14,7 @@ export const EducationStyle = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    margin-top: 30rem;
+    margin-top: 35rem;
   }
 
 `;

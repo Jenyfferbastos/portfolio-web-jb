@@ -8,6 +8,6 @@ export const ContactStyle = styled.div`
   align-items: center;
 
   @media only screen and (max-width: 1024px) {
-    margin: 40rem 4rem 0rem 4rem;
+    margin: 45rem 4rem 0rem 4rem;
   }
 `;
