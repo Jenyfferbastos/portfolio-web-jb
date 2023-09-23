@@ -10,9 +10,11 @@ import { TechnicalSkills } from "./components/TechnicalSkills/TechnicalSkills";
 import { Education } from "./components/Education/Education";
 import { Services } from "./components/Services/Services";
 import { Projects } from "./components/Projects/Projects";
+import { Contact } from "./components/Contact/Contact";
+import { Footer } from "./components/Footer/Footer";
 
 export function App() {
-  const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", light);
+  const [theme, setTheme] = usePersistedState<DefaultTheme>("theme", dark);
 
   const toggleTheme = () => {
     setTheme(theme.title === "light" ? dark : light);
@@ -39,6 +41,12 @@ export function App() {
       </section>
       <section id="services">
         <Services />
+      </section>
+      <section  id="contact">
+        <Contact/>
+      </section>
+      <section>
+        <Footer />
       </section>
     </ThemeProvider>
   );
