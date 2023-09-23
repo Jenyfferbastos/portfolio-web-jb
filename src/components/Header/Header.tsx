@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import ReactSwitch from "react-switch";
 import { ThemeContext } from "styled-components";
-import { Link } from "react-router-dom";
+import { Link, animateScroll as scroll } from "react-scroll"; // Importando animateScroll e Link de react-scroll
 import {
   Container,
   Title,
@@ -17,11 +17,13 @@ interface Props {
 }
 
 const navigationLinks = [
-  { path: "#about", text: "Sobre mim" },
-  { path: "#projects", text: "Projetos" },
-  { path: "#technical-skills", text: "Habilidades Técnicas" },
-  { path: "#education", text: "Educação" },
-  { path: "#services", text: "Serviços" },
+  { path: "about", text: "Sobre mim" },
+  { path: "technical-skills", text: "Habilidades Técnicas" },
+  { path: "projects", text: "Projetos" },
+  { path: "education", text: "Educação" },
+  { path: "services", text: "Serviços" },
+  { path: "contact", text: "Contato" },
+
 ];
 
 export function Header({ toggleTheme }: Props) {
@@ -39,7 +41,15 @@ export function Header({ toggleTheme }: Props) {
         <NavList>
           {navigationLinks.map((link, index) => (
             <NavItem key={index}>
-              <Link to={link.path}>{link.text}</Link>
+              <Link
+                to={link.path}
+                smooth={true}
+                duration={500}
+                offset={-70}
+                onClick={() => setIsMenuOpen(false)} // Fecha o menu ao clicar em um link
+              >
+                {link.text}
+              </Link>
             </NavItem>
           ))}
         </NavList>
@@ -64,4 +74,3 @@ export function Header({ toggleTheme }: Props) {
     </Container>
   );
 }
-``
