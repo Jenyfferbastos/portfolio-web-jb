@@ -19,7 +19,7 @@ export default createGlobalStyle`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 3rem;
+    margin-bottom: 1rem;
   }
 
   a { 
