@@ -5,7 +5,7 @@ export const timelineData = [
   {
     icon: <FaGraduationCap /> ,
     title: 'Bacharelado em Tecnologia',
-    description: 'Sistemas de Informação | 2022 - 2025',
+    description: 'Engenharia de Software | 2023',
   },
   {
     icon:  <FaBookOpen />,
