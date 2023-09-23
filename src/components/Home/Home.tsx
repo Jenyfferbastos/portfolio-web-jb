@@ -12,7 +12,7 @@ export function Home() {
       <Text>Fico feliz em vê-lo (a) por aqui.</Text>
       <ButtonContainer>
         <Button text="Currículo" color={"#EA6AA9"} icon={FaRegFilePdf} children={undefined} downloadUrl="src\assets\documento\Jenyffer Bastos Sacramento_CV.docx"/>
-        <Button text="GitHub" color={"transparent"} icon={VscGithubAlt} children={undefined}  ></Button>
+        <Button text="GitHub" color={"transparent"} icon={VscGithubAlt} children={undefined} link="https://github.com/Jenyfferbastos" isExternal={true}></Button>
       </ButtonContainer>
     </HomeStyle>
   );
