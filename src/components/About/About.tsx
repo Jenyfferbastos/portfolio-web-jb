@@ -29,7 +29,7 @@ export function About() {
         Desenvolvedora front-end e Instrutora de Tecnologia, meu percurso é marcado por um Bacharelado em andamento em Engenharia de Software e a conclusão de +30 cursos na área. 
         </Description>
         <Description>
-        Com experiências notáveis em projetos voluntários em ONGs, como no Instituto Busidô e Rede Impulsoma,  busco constantemente impactar através do código. Minha jornada é moldada pelo compromisso em superar limites, sempre com o objetivo de fazer a diferença no mundo da tecnologia.
+        Com experiências notáveis em projetos voluntários em ONGs, como no Instituto Bushidô e Rede Impulsoma,  busco constantemente impactar através do código. Minha jornada é moldada pelo compromisso em superar limites, sempre com o objetivo de fazer a diferença no mundo da tecnologia.
         </Description>
         <ButtonWrapper>
           <Button color="#EA6AA9" text="LinkedIn" icon={BsLinkedin} children={undefined} link="https://www.linkedin.com/in/jenyffer-bastos-41098b1b7/"  isExternal={true}/>
