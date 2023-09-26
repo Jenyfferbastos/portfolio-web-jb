@@ -7,7 +7,7 @@ export function Home() {
   return (
     <HomeStyle>
       <Text>Hello World</Text>
-      <Heading>Olá, eu sou Jenyffer</Heading>
+      <Heading>Olá, eu sou Jenyffer! Futura</Heading>
       <h1>Engenheira de Software</h1>
       <Text>Fico feliz em vê-lo (a) por aqui.</Text>
       <ButtonContainer>
